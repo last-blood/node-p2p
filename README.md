@@ -47,7 +47,11 @@ Someone (this could be Alice, Bob, or a third person) must run the tracker serve
 This only needs to be done once.
 
 **Action:** Open **Terminal 1** and run:
+
+```
 pnpm dev:tracker
+
+```
 
 **Result:**  
 You will see `[Tracker] Server listening on http://localhost:8080`.  
@@ -66,8 +70,12 @@ pnpm dev:cli share <file-path> <tracker-url>
 **Example:**  
 Alice has her file located at `/home/alice/Videos/my_trip.mp4`.
 
-She opens **Terminal 2** and runs:  
+She opens **Terminal 2** and runs:
+
+```
 pnpm dev:cli share /home/alice/Videos/my_trip.mp4 http://localhost:8080
+
+```
 
 **What Happens:**
 
@@ -102,8 +110,12 @@ pnpm dev:cli download <manifest-path> <output-directory>
 Bob saved the "map" to `/home/bob/Desktop/my_trip.mp4.manifest`.  
 He wants to save the final video to his Downloads folder.
 
-He opens **Terminal 3** and runs:  
+He opens **Terminal 3** and runs:
+
+```
 pnpm dev:cli download /home/bob/Desktop/my_trip.mp4.manifest /home/bob/Downloads
+
+```
 
 **What Happens:**
 
