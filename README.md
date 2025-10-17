@@ -120,7 +120,7 @@ Download a File | pnpm dev:cli download <manifest-path> <output-dir> | Downloads
 ---
 
 ## Example Architecture
-
+```
         ┌────────────┐
         │   Tracker  │
         │ (Phonebook)│
@@ -132,6 +132,7 @@ Download a File | pnpm dev:cli download <manifest-path> <output-dir> | Downloads
 │   Alice    │◀──▶│    Bob     │
 │ (Seeder)   │    │ (Leecher)  │
 └────────────┘    └────────────┘
+```
 
 - Tracker connects peers.
 - Peers exchange file chunks directly.
