@@ -1,0 +1,10 @@
+{
+  "fileName": "my_file.txt",
+  "fileSize": 26,
+  "chunkSize": 262144,
+  "chunkHashes": [
+    "0a62647177a86a2fb12543e243f6b7f874723854d500106898f322deff752ed5"
+  ],
+  "trackerUrl": "http://localhost:8080",
+  "fileHash": "40e110dfc38169d7fda03218ec1770df75c95b8237eff4bd3b146985d948b391"
+}

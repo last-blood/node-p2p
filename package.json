@@ -1,0 +1,24 @@
+{
+  "name": "p2p",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && tsc-alias",
+    "dev:tracker": "tsx --watch src/tracker/tracker.ts",
+    "dev:cli": "tsx src/peer/cli.ts",
+    "start:tracker": "node --enable-source-maps dist/tracker/tracker.js",
+    "cli": "node --enable-source-maps dist/peer/cli.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.18.3",
+  "devDependencies": {
+    "@types/node": "^24.8.1",
+    "tsc-alias": "^1.8.16",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
