@@ -49,6 +49,7 @@ This only needs to be done once.
 **Action:** Open **Terminal 1** and run:
 
 ```
+
 pnpm dev:tracker
 
 ```
@@ -64,8 +65,13 @@ Leave this terminal running.
 Alice has a video she wants to share.  
 She runs the share command to create the "map" (.manifest file) and start listening for downloaders.
 
-**Command:**  
+**Command:**
+
+```
+
 pnpm dev:cli share <file-path> <tracker-url>
+
+```
 
 **Example:**  
 Alice has her file located at `/home/alice/Videos/my_trip.mp4`.
@@ -73,6 +79,7 @@ Alice has her file located at `/home/alice/Videos/my_trip.mp4`.
 She opens **Terminal 2** and runs:
 
 ```
+
 pnpm dev:cli share /home/alice/Videos/my_trip.mp4 http://localhost:8080
 
 ```
@@ -103,8 +110,13 @@ Alice emails, messages (on Discord, etc.), or uses a USB stick to give `my_trip.
 Bob receives the `.manifest` file and saves it, for example, on his Desktop.  
 Now he can use it to download the video.
 
-**Command:**  
+**Command:**
+
+```
+
 pnpm dev:cli download <manifest-path> <output-directory>
+
+```
 
 **Example:**  
 Bob saved the "map" to `/home/bob/Desktop/my_trip.mp4.manifest`.  
@@ -113,6 +125,7 @@ He wants to save the final video to his Downloads folder.
 He opens **Terminal 3** and runs:
 
 ```
+
 pnpm dev:cli download /home/bob/Desktop/my_trip.mp4.manifest /home/bob/Downloads
 
 ```
